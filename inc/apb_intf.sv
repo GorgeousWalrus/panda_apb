@@ -11,7 +11,7 @@ interface apb_bus_t #(
   logic                   PCLK;       // Clock
   logic                   PRESETn;    // Active low reset
   logic [ADDR_WIDTH-1:0]  PADDR;      // Address
-  logic                   PSELx;      // Slave select
+  logic                   PSEL;       // Slave select
   logic                   PENABLE;    // Enable signal
   logic                   PWRITE;     // Write enable (low=read)
   logic [DATA_WIDTH-1:0]  PWDATA;     // Data to be written (master->slave)
